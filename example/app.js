@@ -36,6 +36,7 @@ var App = React.createClass({
     return (
       <div className="app">
         <div className="tree">
+          <button onClick={this.updateTree}>Add Node</button>
           <Tree
             paddingLeft={20}
             tree={this.state.tree}
@@ -44,12 +45,6 @@ var App = React.createClass({
             renderNode={this.renderNode}
           />
         </div>
-        <div className="inspector">
-          <button onClick={this.updateTree}>update tree</button>
-          <pre>
-          {JSON.stringify(this.state.tree, null, '  ')}
-          </pre>
-         </div>
       </div>
     );
   },

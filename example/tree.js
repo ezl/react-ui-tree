@@ -2,7 +2,6 @@ module.exports = {
   module: 'react-ui-tree',
   children: [{
     module: 'dist',
-    collapsed: true,
     children: [{
       module: 'node.js',
       leaf: true
@@ -20,7 +19,11 @@ module.exports = {
     module: 'example',
     children: [{
       module: 'app.js',
-      leaf: true
+      children: [{
+          module: 'eric',
+          leaf: true
+        }
+      ]
     }, {
       module: 'app.less',
       leaf: true

@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #21252B;
@@ -18,11 +17,18 @@
     color: #9DA5B4;
     font-size: 12px;
     font-family: Menlo;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .children {
+    display: inline-block;
   }
 
   .node {
     display: inline-block;
-    width: 100%;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
     padding: 4px 5px;
 
     &.is-active {
