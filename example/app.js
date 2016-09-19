@@ -47,7 +47,6 @@ var App = React.createClass({
     return (
       <div className="app">
         <div className="tree">
-          <button onClick={this.updateTree}>Add Node</button>
           <Tree
             paddingLeft={20}
             tree={this.state.tree}
@@ -61,14 +60,6 @@ var App = React.createClass({
   },
 
   handleChange(tree) {
-    this.setState({
-      tree: tree
-    });
-  },
-
-  updateTree() {
-    var tree = this.state.tree;
-    tree.children.push({module: 'test'});
     this.setState({
       tree: tree
     });
