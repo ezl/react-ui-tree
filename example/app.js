@@ -4,6 +4,8 @@ var ReactDOM = require('react-dom');
 var Tree = require('../lib/react-ui-tree.js');
 var tree = require('./tree');
 
+import { RIEToggle, RIEInput, RIETextArea, RIENumber, RIETags } from 'riek'
+
 require('../lib/react-ui-tree.less');
 require('./theme.less');
 require('./app.less');
@@ -16,12 +18,21 @@ var App = React.createClass({
     };
   },
 
+  virtualServerCallback() {
+    console.log("virtualServerCallback");
+  },
+
   renderNode(node) {
     return (
       <span className={cx('node', {
         'is-active': node === this.state.active
         })} onClick={this.onClickNode.bind(null, node)}>
-        {node.module}
+
+        <RIETextArea
+          value={node.module}
+          change={this.virtualServerCallback}
+          propName="textarea" />
+
       </span>
     );
   },
