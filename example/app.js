@@ -1,7 +1,7 @@
 var cx = require('classnames');
-var React = require('react');
-var ReactDOM = require('react-dom');
 var Tree = require('../lib/react-ui-tree.js');
+var React = require('../lib/react.js');
+var ReactDOM = require('../lib/react-dom.js');
 var tree = require('./tree');
 
 import { RIEToggle, RIEInput, RIETextArea, RIENumber, RIETags } from 'riek'
@@ -48,7 +48,7 @@ var App = React.createClass({
       <div className="app">
         <div className="tree">
           <Tree
-            paddingLeft={20}
+            paddingLeft={50}
             tree={this.state.tree}
             onChange={this.handleChange}
             isNodeCollapsed={this.isNodeCollapsed}

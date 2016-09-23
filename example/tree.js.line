@@ -1,0 +1,26 @@
+module.exports = {
+  module: 'react-ui-tree',
+  children: [
+  {
+    module: '.gitignore',
+    leaf: true
+  }, {
+    module: 'index.js',
+    leaf: true
+  }, {
+    module: 'LICENSE',
+    leaf: true
+  }, {
+    module: 'Makefile',
+    leaf: true
+  }, {
+    module: 'package.json',
+    leaf: true
+  }, {
+    module: 'README.md',
+    leaf: true
+  }, {
+    module: 'webpack.config.js',
+    leaf: true
+  }]
+}

@@ -1,0 +1,16 @@
+module.exports = {
+  module: '1,1',
+  children: [{
+    module: '2,2',
+    children: [{
+      module: '3,3',
+      children: [{
+        module: '4,4',
+        children: [{
+          module: '5,5',
+          leaf: true
+        }]
+      }]
+    }]
+  }]
+}
