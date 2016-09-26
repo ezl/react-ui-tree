@@ -48,7 +48,7 @@ var App = React.createClass({
       <div className="app">
         <div className="tree">
           <Tree
-            paddingLeft={50}
+            paddingLeft={10}
             tree={this.state.tree}
             onChange={this.handleChange}
             isNodeCollapsed={this.isNodeCollapsed}
